@@ -32,7 +32,7 @@ class SmartSnippet(models.Model):
             'Enter a template (i.e. "snippets/plugin_xy.html")'
             ' which will be rendered.'))
     sites = models.ManyToManyField(
-        Site, null=False, blank=True,
+        Site,
         help_text=_('Select on which sites the snippet will be available.'),
         verbose_name='sites')
     description = models.TextField(_("Description"), blank=True)
